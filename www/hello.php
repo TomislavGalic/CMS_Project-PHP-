@@ -1,7 +1,7 @@
 <?php
 
-$message = "Hello again!";
-$count = 3;
-$price = 1.99;
-$is_admin = true;
-$data = null;
+$articles = [ "First post", "Second post", "And so on.." ];
+
+foreach ($articles as $article){
+  echo $article, ", ";
+}

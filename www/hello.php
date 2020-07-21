@@ -1,7 +1,9 @@
 <?php
 
-$articles = [ "First post", "Second post", "And so on.." ];
+$array = [  "Tomo",
+            "Zvone",
+            "third" => "Frano"];
 
-foreach ($articles as $article){
-  echo $article, ", ";
+foreach($array as $index => $value){
+    echo "$index" . " = " . "$value ";
 }

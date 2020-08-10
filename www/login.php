@@ -7,13 +7,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = require 'includes/db.php';
 
     if (User::authenticate($conn, $_POST['username'], $_POST['password'])) {
-
+        
         Auth::login();
 
         Url::redirect('/');
 
     } else {
-
+        
         $error = "login incorrect";
 
     }
